@@ -1,4 +1,5 @@
 # Classification de commentaires citoyens (NLP) — Test technique TAISS 2026 / Afriklang
+Lien: https://fine-tuning-do9k86pvv7jfqpdztsp9ll.streamlit.app/
 
 - **Données** : 150 commentaires courts (≈ 9 mots), 3 classes équilibrées (Satisfaction / Insatisfaction / Suggestion), dont 3 mêlant français et éwé/mina.
 - **Nettoyage** (`nlp_utils.py`) : minuscules, accents neutralisés (lettres éwé conservées), élisions développées, ponctuation et chiffres supprimés. Les **stopwords sont une liste maison** qui *conserve* négations, pronoms de 1ʳᵉ personne, intensifs et marqueurs de modalité : +0,024 de F1 mesuré par rapport à l'absence de filtrage.
